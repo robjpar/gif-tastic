@@ -49,7 +49,7 @@ function renderGifs(response) {
         var urlAnimate = gif.images.fixed_height.url;
         var urlOriginal = gif.images.original.url;
 
-        var d = $('<div class="card float-left mr-3 mb-3" style="height:400px">');
+        var d = $('<div class="card float-left mr-3 mb-3" style="height:400px; max-width: 400px">');
         var i = $(`<img class="card-img-top gif" src=${urlStill} alt=${title} style="width:100%">`)
             .attr("data-still", urlStill)
             .attr("data-animate", urlAnimate)
