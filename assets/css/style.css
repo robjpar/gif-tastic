@@ -18,4 +18,9 @@ body {
 
 #card-gif {
     background: rgba(241, 91, 103, 0.931);
+    min-height: 500px;
+}
+
+.gif:hover {
+    cursor: pointer;
 }
