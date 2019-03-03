@@ -1,9 +1,13 @@
-const TERMS = ["cats", "mugs", "cars", "blue", "glue", "wire", "button", "plastic", "stars"];
+const TERMS_INITIAL = ["cats", "mugs", "cars", "blue", "glue", "wire", "button", "plastic", "stars"];
+var terms = JSON.parse(localStorage.getItem("terms"));
+if (!Array.isArray(terms)) {
+    terms = TERMS_INITIAL;
+}
 
 function renderButtons() {
     $("#div-button").empty();
 
-    TERMS.forEach(function (term, index) {
+    terms.forEach(function (term, index) {
         var d = $('<div class="btn-group mr-2 mb-2 float-left">');
         var b1 = $(`<button class="btn btn-primary" data-term=${term}>${term}</button>`);
         var b2 = $(`<button class="btn btn-outline-danger btn-sm" data-index=${index}>&times;</button>`);
@@ -18,6 +22,8 @@ function renderButtons() {
     var b = $('<button type="submit" class="btn btn-outline-primary mb-2" id="add-more-button">add more</button>');
     f.append(l, i, b);
     $("#div-button").append(f);
+
+    localStorage.setItem("terms", JSON.stringify(terms));
 }
 
 renderButtons();
@@ -73,7 +79,7 @@ $(document).on("click", "button", function () {
     var index = $(this).attr("data-index");
 
     if (newTerm && id === "add-more-button") {
-        TERMS.push(newTerm);
+        terms.push(newTerm);
         renderButtons();
         return;
     }
@@ -84,7 +90,7 @@ $(document).on("click", "button", function () {
     }
 
     if (index) { // index !== undefined
-        TERMS.splice(index, 1);
+        terms.splice(index, 1);
         renderButtons();
         return;
     }
