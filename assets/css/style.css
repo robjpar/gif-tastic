@@ -1,26 +1,32 @@
+/* General styling */
 body {
     /* Google Fonts */
     font-family: 'Rock Salt', cursive;
 
+    /* Page background */
     background: url(../images/http___pluspng.com_img-png_png-frames-for-pictures-10-768.png);
     background-size: 100% 100%;
     background-attachment: fixed;
 }
 
+/* Jumbotron styling */
 #jumbo {
     color: rgb(160, 8, 8);
     background: rgba(149, 219, 69, 0.973);
 }
 
+/* Card for buttons styling */
 #card-button {
     background: rgba(231, 229, 100, 0.945);
 }
 
+/* Card for gifs styling */
 #card-gif {
     background: rgba(241, 91, 103, 0.931);
     min-height: 500px;
 }
 
+/* Change the cursor to the finger pointer over a gif */
 .gif:hover {
     cursor: pointer;
 }
