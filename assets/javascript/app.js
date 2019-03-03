@@ -4,7 +4,7 @@ function renderButtons() {
     $("#div-button").empty();
 
     TERMS.forEach(function (term, index) {
-        var d = $('<div class="btn-group mr-sm-2 mb-2 float-left">');
+        var d = $('<div class="btn-group mr-2 mb-2 float-left">');
         var b1 = $(`<button class="btn btn-primary" data-term=${term}>${term}</button>`);
         var b2 = $(`<button class="btn btn-outline-danger btn-sm" data-index=${index}>&times;</button>`);
         d.append(b1, b2);
@@ -12,10 +12,10 @@ function renderButtons() {
     });
 
     var f = $('<form class="form-inline float-left">');
-    var l = $('<label for="add-more-input" class="text-primary mr-sm-2">')
+    var l = $('<label for="add-more-input" class="text-primary mr-2 mb-2">')
         .append($('<i class="far fa-hand-point-left fa-2x">'));
-    var i = $('<input type="text" class="form-control mr-sm-2" id="add-more-input">');
-    var b = $('<button type="submit" class="btn btn-outline-primary" id="add-more-button">add more</button>');
+    var i = $('<input type="text" class="form-control mr-2 mb-2" id="add-more-input">');
+    var b = $('<button type="submit" class="btn btn-outline-primary mb-2" id="add-more-button">add more</button>');
     f.append(l, i, b);
     $("#div-button").append(f);
 }
