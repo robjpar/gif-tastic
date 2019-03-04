@@ -23,7 +23,7 @@ function renderButtons() {
     var f = $('<form class="form-inline float-left">');
     var l = $('<label for="add-more-input" class="text-primary mr-2 mb-2">')
         .append($('<i class="far fa-hand-point-left fa-2x">'));
-    var i = $('<input type="text" class="form-control mr-2 mb-2" id="add-more-input">');
+    var i = $('<input type="text" class="form-control mr-sm-2 mb-2" id="add-more-input">');
     var b = $('<button type="submit" class="btn btn-outline-primary mb-2" id="add-more-button">add more</button>');
     f.append(l, i, b);
     $("#div-button").append(f);
@@ -66,7 +66,7 @@ function renderGifs(response) {
         var urlOriginal = gif.images.original.url;
 
         // Creating a card for the gif
-        var d = $('<div class="card float-left mr-3 mb-3" style="height:400px; max-width: 400px">');
+        var d = $('<div class="card float-left mr-sm-3 mb-3" style="height:400px; max-width: 400px">');
         var i = $(`<img class="card-img-top gif" src=${urlStill} alt=${title} style="width:100%">`)
             .attr("data-still", urlStill)
             .attr("data-animate", urlAnimate)
