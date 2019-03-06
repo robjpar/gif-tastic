@@ -73,7 +73,7 @@ function renderGifs(response) {
             .attr("data-state", "still");
         var d2 = $('<div class="card-body">')
             .append(`<h4 class="card-title">${title}</h4>`)
-            .append(`<p class="card-text">Rating: ${rating}</p>`)
+            .append(`<p class="card-text">Rating ${rating}</p>`)
             .append(`<a href=${urlOriginal} target="_blank" class="btn btn-outline-primary btn-sm float-right">see original</a>`);
         d.append(i, d2);
         $("#div-gif").append(d);
