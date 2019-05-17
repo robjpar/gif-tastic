@@ -40,7 +40,7 @@ function fetchGifs(term) {
     var queryURL = "https://api.giphy.com/v1/gifs/search?";
 
     var queryParams = {
-        api_key: "dc6zaTOxFJmzC",
+        api_key: "KjZMazDP2jtzKKJWeXPpbchhbivbSkeK",
         q: term,
         limit: 10 // # of gifs fetched per call
     };
