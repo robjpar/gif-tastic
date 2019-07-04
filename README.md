@@ -1,7 +1,36 @@
-# gif-tastic
+# GifTastic
 
-## Description
-The GifTastic Project implemented with HTML and JavaScript (jQuery, Ajax), and using the GIPHY API.  Styling done with Bootstrap 4, CSS and Google Fonts. The local storage feature is utilized to save the list of search terms in case the webpage is refreshed or revisited.
+![gif-tastic](images/gif-tastic.png 'GifTastic')
 
-## How to use
-Access the deployed website though this link [gif-tastic](https://robjpar.github.io/gif-tastic/). Alternatively, clone the repository to a local folder and open the `index.html` file with a web browser.
+GifTastic is a web application which allows the user to create and store search terms and using them to pull gifs from GIPHY API.
+
+## Features
+
+- Adding/deleting search terms to/from the "navbar"
+- Storing the search terms between sessions
+- Start/stop the animation by clicking on the image
+- Links to original versions of the gifs
+- Mobile responsive design
+
+## Technologies & Frameworks
+
+- HTML
+- CSS, Bootstrap
+- JavaScript, AJAX
+- Browser local storage
+
+## API's
+
+- GIPHY API
+
+## Installation
+
+No installation is needed. Access the deployed website with a web browser through this link [gif-tastic](https://robjpar.github.io/gif-tastic/).
+
+## Usage
+
+Follow the on-screen instructions.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
